@@ -8,7 +8,7 @@ Feature: Insert products using the post API
     Examples:
       | ProductTitle |
       | Shoes        |
-
+  @test
   Scenario Outline: Validate the post product API response body
     Given I hit URL of the post products API endpoint
     When I pass the URL of products in the API

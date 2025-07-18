@@ -1,5 +1,5 @@
 Feature: Delete products using the PUT API
-
+  @smoke
   Scenario Outline: Validate the delete product API status code
     Given I hit URL of the delete products API endpoint
     When I pass the URL of products to be deleted in the API with <ProductNumber>
@@ -8,3 +8,4 @@ Feature: Delete products using the PUT API
     Examples:
       | ProductNumber |
       | 6             |
+      | 7             |

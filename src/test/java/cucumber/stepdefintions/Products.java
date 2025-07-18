@@ -1,5 +1,6 @@
-package stepdefintions;
+package cucumber.stepdefintions;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -24,6 +25,7 @@ public class Products {
     public ResponseBody body;
     public JsonPath jsonpath;
     public JSONObject requestParams;
+
 
     @Given("I hit URL of the get products API endpoint")
     public void i_hit_url_of_the_get_products_api_endpoint(){
